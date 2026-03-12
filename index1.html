@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dynamic Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <h1>Dynamic Image Gallery</h1>
+</head>
+
+<body>
+
+<div class="buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('animals')">Animals</button>
+    <button onclick="addImage()">Add Image</button>
+</div>
+
+<div id="gallery"></div>
+
+<div class="slideshow">
+    <button onclick="startSlideshow()">Start Slideshow</button>
+    <button onclick="stopSlideshow()">Stop</button>
+</div>
+<h2>Slideshow</h2>
+
+<div class="slideshow">
+    <img id="slideImage" width="400">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
